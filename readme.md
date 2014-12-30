@@ -2,6 +2,10 @@
 
 A simple directive module for creating powerful select lists.
 
+### HOW TO USE IT ###
+Include this in your loaded scripts, add it as a dependency in your Angular App declaration. 
+You may also want to include the default CSS file, it handles most of the layout and should generally work fine. If you don't include this, it definitely won't look like a select list at all by itself.
+
 ### THINGS THAT HELP: ###
  * It makes use of [Font Awesome](http://fortawesome.github.io/Font-Awesome/) for some simple icons. You don't really need these, but they're nice.
  * Angular is kind of a must. I mean, maybe you can use it elsewhere? Probably not though.
@@ -23,7 +27,7 @@ Because of the nature of broadcasting an event downward to all children, using t
 This module as responsible and cleans up all listeners on `$destroy`, assuming it receives this event (which it should, in most cases). One known case that does not allow for this is with the [Modals from Angular UI Bootstrap](http://angular-ui.github.io/bootstrap/#/modal), but I leave open the possibility that something else was at fault in that case.
 
 ### TODO ###
- * Add support for flag to add 'onLeft' class to validation icon
+ * Add support for flag to add 'onLeft' class to validation icon. The CSS for this already exists.
  * Change SuperSelectKey to allow for static and optional
  * Accurate default validation for objects instead of strings
  * Add field restriction option for filtering
