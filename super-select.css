@@ -1,0 +1,83 @@
+/* @IxSelect */
+.superSelect {
+	text-align: left;
+	border: 1px solid #474747;
+	border-radius: 3px;
+	height: 100%;
+}
+.superSelect label {
+	width: 100%;
+	padding: 0.5em 0.5em;
+	margin: 0;
+	height: 2.7em;
+}
+.superSelect label > span {
+	width: 95%;
+	display: inline-block;
+}
+.superSelect label > i {
+	width: 5%;
+	font-size: 150%;
+	vertical-align: bottom;
+	text-align: right;
+}
+.superSelect .superSelectPanel {
+	position: relative;
+	padding: 0.2em 0.4em;
+}
+.superSelect .superSelectPanelWrapper {
+	position: absolute;
+	left: 0;
+	top: 100%;
+	width: 100%;
+	padding: 0.2em 0.4em;
+	border: 1px solid #474747;
+	border-radius: 0 0 3px 3px;
+	background: #fff;
+}
+.superSelect .superSelectFilter {
+	position: relative;
+	width: 96%;
+	margin-left: 2%;
+	padding: 0.2em 0.5em;
+	margin-top: 0.2em;
+}
+.superSelect .superSelectOptions {
+	position: relative;
+	padding: 0;
+	margin-top: 0.2em;
+	max-height: 10em;
+	overflow-y: scroll;
+}
+.superSelect .superSelectOptions i {
+	width: 5%;
+	visibility: hidden;
+}
+.superSelect .superSelectOptions .title {
+	width: 95%;
+	display: inline-block;
+	padding: 0.2em 0;
+	margin: 0;
+}
+.superSelect .superSelectOptions .selected i {
+	visibility: visible;
+}
+i.superSelectIsValid {
+	position: relative;
+	left: 103%;
+	margin-top: -8.25%;
+}
+i.superSelectIsValid.onLeft {
+	left: -7%;
+}
+.superSelect li.superSelectOpt:hover,
+.superSelect li.superSelectOpt.selected:hover {
+	background: #a1caf1;
+	cursor: pointer;
+}
+i.superSelectIsValid.fa-check {
+	color: #2aa800;
+}
+i.superSelectIsValid.fa.fa-exclamation {
+	color: #a82a00;
+}
